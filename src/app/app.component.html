@@ -1,0 +1,20 @@
+<nav>
+   
+ <ng-container *ngIf="this.auth.isAuthenticated();then authenticated;else notauthenticated ">
+   
+ </ng-container>
+  
+ <ng-template #authenticated>
+   <b class="header" >BOOK WORLD</b>
+   <button type="button" class="active" routerLink="/home" routerLinkActive="active">Books</button>
+   <button type="button" routerLink="/dashboard" s>YourId</button>
+   <button type="button" (click)="logout()">logout</button>
+</ng-template>
+<ng-template #notauthenticated> 
+   <b class="header">BOOK WORLD</b>
+   <button  type="button" routerLink="/login">Login</button>
+   <button type="button" routerLink="/register">Register</button>
+</ng-template>
+</nav>
+<br><br><br>
+<router-outlet></router-outlet>

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.romance{
+    width: 280px;
+    height: 500px;
+    margin: 17.5px;
+    text-align: center;
+    background-color: #ffff;
+    border: 0.5px solid black;
+    box-shadow: 0 10px 20px  inset indianred;
+}
+.romance button{
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+}
+.romance img{
+    margin-top: 10px;
+    width: 248px;
+    height: 250px;
+    background-color: #fff;
+}
+.porduts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+   width: 210px;
+   background-color: rgb(117, 145, 117);
+   color: yellow;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+.btns{
+    background-color: rgb(124, 105, 70);
+    width: 100px;
+}
+.btns:hover{
+    background-color: orange;
+    color: #fff;
+}

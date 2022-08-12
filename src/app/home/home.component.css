@@ -1,0 +1,25 @@
+
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+.menu{
+    width: 100%;
+}
+img{
+    width: 98%;
+    height: 98vh;
+    cursor: pointer;
+    
+}
+h1{
+    background-color: rgba(255, 255, 255, 0.349);
+    position: absolute;
+    margin-top: -280px;
+    width: 99%;
+    color:red;
+}

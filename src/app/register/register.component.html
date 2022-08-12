@@ -1,0 +1,23 @@
+<div class="container">
+    <form action="" class="Register" #name="ngForm" novalidate (ngSubmit)="name.form.valid&&onSubmit()">
+      
+        <h1>REGISTER HERE</h1>
+       
+        <input type="text" name="names" id="" placeholder="Username" [(ngModel)] ="formdata.names" #names="ngModel" required><br>
+        <span *ngIf="this.submit&&names.errors?.['required']">Name is requried.</span>
+
+        <input type="email" name="email" id="" placeholder="Email_id" [(ngModel)] ="formdata.email" #email="ngModel" required><br>
+        <span *ngIf="this.submit&&email.errors?.['required']">Email is requried.</span>
+
+        <input type="password" name="password" id="" placeholder="Password" [(ngModel)] ="formdata.password" #password="ngModel" required minlength="8"><br>
+        <span *ngIf="this.submit&&password.errors?.['required']">Password is requried.</span><br>
+        <span *ngIf="this.submit&&password.errors?.['minlength']">Minimum length of password 8 characters.</span>
+        <span *ngIf="this.errorMessage">
+            <p [innerText]="this.errorMessage" ></p>
+        </span>
+
+        <input class="submit" type="submit" value="Register" (click)="submit=true" >
+        <p>Already have account please!?.. <a routerLink="/login">Login</a></p>
+    </form>
+
+</div>
